@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMain"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:background="#03A9F4"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_20sdp">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/_260sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp">
+
+        <LinearLayout
+            android:id="@+id/llIllustration"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageIllustration"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_15sdp" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/rateTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate Us"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rateDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llrate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Would you like to rate our app?"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp" />
+
+    <LinearLayout
+        android:id="@+id/llBars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rateDescription"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/start1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/start2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/start3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/start4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/start5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llBars"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:text="Rate" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnExit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:text="Cancel" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
